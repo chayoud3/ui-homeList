@@ -1,0 +1,160 @@
+.container {
+  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  .section {
+    width: 100%;
+    padding: 2em 1em;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .input-group {
+      width: 100%;
+      padding: 0 2em;
+      box-sizing: border-box;
+
+      .input-title {
+        font-weight: bold;
+      }
+
+      .ant-btn {
+        width: 100%;
+      }
+    }
+
+    .title {
+      width: 100%;
+      padding: 0 5em;
+      font-weight: bold;
+      display: inline-flex;
+      justify-content: space-between;
+
+      .ant-btn {
+        width: 414px;
+        color: #fff !important;
+        background-color: green !important;
+      }
+    }
+
+    .table-container {
+      width: 100%;
+      margin: 0 5em;
+      box-sizing: border-box;
+      border-collapse: collapse;
+
+      tr {
+        &:hover {
+          cursor: pointer;
+          background-color: #f4f7fc;
+        }
+      }
+
+      td, th {
+        padding: 0.2em;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+      }
+    }
+
+    &.pagination {
+      padding: 0 6em;
+      box-sizing: border-box;
+      justify-content: flex-end;
+
+      .pagination-container {
+        span {
+          box-sizing: border-box;
+          margin: 0 0.5em;
+        }
+      }
+    }
+
+    .post-code-container {
+      width: 100%;
+      padding: 2em 1em;
+      margin: 0 5em;
+      display: inline-flex;
+      box-sizing: border-box;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .post-code-selector {
+        min-width: 500px;
+      }
+
+      .summarize-container {
+        margin: 1em 0;
+        display: none;
+        min-width: 500px;
+
+        &.active {
+          display: inline-flex;
+          flex-direction: column;
+
+          td,th { 
+            color: blue;
+            text-align: left;
+          }
+
+          .col-number {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  .form-inline {
+    width: 100%;
+    margin: 1em 0;
+    display: inline-flex;
+    justify-content: space-around;
+
+    .form-group {
+      width: 100%;
+      padding: 0 0.5em;
+      flex-direction: column;
+      display: inline-flex;
+
+      .label {
+        width: 100%;
+      }
+
+      .ant-input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.btn-yellow {
+  margin: 0 1em;
+  color: #555 !important;
+  background-color: yellow !important;
+}
+
+.btn-red {
+  margin: 0 1em;
+  color: #fff !important;
+  background-color: red !important;
+}
+
+.btn-green {
+  margin: 0 1em;
+  color: #fff !important;
+  background-color: green !important;
+}
+
+.bg-light-blue {
+  background-color: #f4f7fc;
+}
